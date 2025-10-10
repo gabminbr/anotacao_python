@@ -14,8 +14,8 @@ próprias bibliotecas, completamente isolada de todas as outras.
 ```bash
 mkdir projeto_teste
 cd projeto_teste
-Agora, dentro da pasta projeto_gastos, execute o seguinte comando para criar o ambiente virtual. Vamos chamar nossa "caixa de ferramentas" de venv:
 ```
+- Agora, dentro da pasta projeto_teste, execute o seguinte comando para criar o ambiente virtual. Vamos chamar nossa "caixa de ferramentas" de venv:
 ```bash
 python -m venv venv
 ```
@@ -31,3 +31,4 @@ source venv/bin/activate
 ```
 - para saber que deu certo o comando, agora o prompt de comando será prefixado com (venv)
 - agora sempre que baixar algo com o *pip* vai ser instalado dentro desse ambiente (caixa), sem afetar os outros projetos, quando terminar de trabalhar, basta fazer um deactivate no terminal.
+
