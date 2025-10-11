@@ -31,4 +31,5 @@ source venv/bin/activate
 ```
 - para saber que deu certo o comando, agora o prompt de comando será prefixado com (venv)
 - agora sempre que baixar algo com o *pip* vai ser instalado dentro desse ambiente (caixa), sem afetar os outros projetos, quando terminar de trabalhar, basta fazer um deactivate no terminal.
+- caso tenha algum problema para usar o python no venv, aperta cntrl + shift + P, e vai em Python: interpreter select e bota o que tem venv, e pronto, seu ambiente virtual vai rodar o python.
 
