@@ -90,5 +90,3 @@ meu_cachorro.fazer_som()
 [Cachorro, Animal, object]
 ```
 - o super() serve para indicar que comece a busca no MRO a partir da proxima classe na lista.
-
-### Polimorfismo
