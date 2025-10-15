@@ -90,3 +90,30 @@ meu_cachorro.fazer_som()
 [Cachorro, Animal, object]
 ```
 - o super() serve para indicar que comece a busca no MRO a partir da proxima classe na lista.
+
+### Sobrecarga de construtores
+- usaremos o termo '@classmethod'
+```python
+class Animal:
+    def __init__(self, nome, raca, sexo, idade=None): # idade agora é um parâmetro opcional
+        """
+        Construtor principal. A idade é opcional e terá o valor None por padrão
+        se não for fornecida.
+        """
+        self.nome = nome
+        self.raca = raca
+        self.sexo = sexo
+        self.idade = idade # O atributo é sempre criado
+
+    @classmethod
+    def com_idade(cls, nome, raca, sexo, idade):
+        """
+        Construtor alternativo que garante que a idade seja fornecida.
+        """
+        # Agora a chamada funciona, pois o __init__ aceita o argumento 'idade'
+        return cls(nome, raca, sexo, idade)
+
+# Como usar:
+animal1 = Animal("Bolinha", "Vira-lata", "Macho") # Funciona, animal1.idade será None
+animal2 = Animal.com_idade("Mimi", "Siamês", "Fêmea", 5) # Funciona, animal2.idade será 5
+```
