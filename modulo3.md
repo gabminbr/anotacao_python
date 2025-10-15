@@ -30,3 +30,6 @@
     }
 ]
 ```
+
+# Manipulação de Arquivos
+- 
